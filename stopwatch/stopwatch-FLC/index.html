@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch & Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch & Countdown</h1>
+        <div class="mode-selection">
+            <div id="stopwatch-arrow" class="arrow-container">
+                <img src="https://www.online-stopwatch.com/favicon.ico" alt="Stopwatch" class="arrow">
+                <span>Stopwatch</span>
+            </div>
+            <div id="countdown-arrow" class="arrow-container">
+                <img src="https://www.online-stopwatch.com/favicon.ico" alt="Countdown" class="arrow down">
+                <span>Countdown</span>
+            </div>
+        </div>
+        
+        <!-- Stopwatch UI -->
+        <div id="stopwatch-container" class="time-container hidden">
+            <h2>Stopwatch</h2>
+            <div id="stopwatch-time" class="time-display">00:00:00</div>
+            <div class="buttons">
+                <button id="start-pause-btn" class="action-btn">Start</button>
+                <button id="reset-btn" class="action-btn">Reset</button>
+            </div>
+            <button id="back-stopwatch" class="back-btn">Back</button>
+        </div>
+        
+        <!-- Countdown UI -->
+        <div id="countdown-container" class="time-container hidden">
+            <h2>Countdown</h2>
+            <div id="countdown-time" class="time-display">00:00:00</div>
+            <div class="number-buttons">
+                <!-- Number buttons for selecting countdown time -->
+                <button class="num-btn">0</button>
+                <button class="num-btn">1</button>
+                <button class="num-btn">2</button>
+                <button class="num-btn">3</button>
+                <button class="num-btn">4</button>
+                <button class="num-btn">5</button>
+                <button class="num-btn">6</button>
+                <button class="num-btn">7</button>
+                <button class="num-btn">8</button>
+                <button class="num-btn">9</button>
+            </div>
+            <div class="buttons">
+                <button id="set-countdown-btn" class="action-btn">Set</button>
+                <button id="reset-countdown-btn" class="action-btn">Reset</button>
+            </div>
+            <button id="back-countdown" class="back-btn">Back</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
